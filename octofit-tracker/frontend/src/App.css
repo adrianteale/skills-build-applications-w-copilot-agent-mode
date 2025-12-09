@@ -1,0 +1,103 @@
+/* Minimal App styles for Octofit Tracker */
+
+body {
+  background: linear-gradient(135deg, #6C63FF 0%, #48C6EF 100%);
+  color: #22223b;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.octofit-navbar {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(108,99,255,0.08);
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.navbar-logo {
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+  color: #6C63FF;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+  color: #48C6EF;
+  text-decoration: underline;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(76,70,255,0.08);
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #6C63FF;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: #f3f0ff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+th {
+  background: #6C63FF;
+  color: #fff;
+  font-weight: 600;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+
+button, .btn {
+  background: linear-gradient(90deg, #6C63FF 60%, #48C6EF 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(108,99,255,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #48C6EF 60%, #6C63FF 100%);
+  box-shadow: 0 4px 16px rgba(76,70,255,0.12);
+}
+
+a {
+  color: #6C63FF;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #48C6EF;
+  text-decoration: underline;
+}
+
+/* Favicon for dark/light backgrounds */
+link[rel="icon"] {
+  background: transparent;
+}
